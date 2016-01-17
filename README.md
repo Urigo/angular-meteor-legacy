@@ -11,13 +11,13 @@
 ### Meteor Project
 1. Install [Meteor](http://docs.meteor.com/#quickstart) `$ curl https://install.meteor.com | /bin/sh`
 2. Create a new meteor app using `$ meteor create myapp` or navigate to the root of your existing app
-3. Install Angular `$ meteor add angular`
+3. Install Angular `$ meteor add angular-legacy`
 
 ### Meteor client side - with Bower
 > Use Meteor as a service in your existing non Meteor angular application
 
 1. Install [meteor-client-side](https://github.com/idanwe/meteor-client-side) `$ bower install meteor-client-side`
-2. Install angular-meteor `$ bower install angular-meteor`
+2. Install angular-meteor `$ bower install angular-meteor-legacy`
 
 ## Resources
 - [Getting started tutorial](https://angular-meteor.com/tutorial)
@@ -55,10 +55,10 @@ meteor create myProject
 cd myProject
 ```
 
-Fork angular-meteor and clone the angular-meteor library to another directory named `angular`
+Fork angular-meteor-legacy and clone the angular-meteor-legacy library to another directory named `angular-legacy`
 ```
-mkdir angular
-git clone https://github.com/[your_username]/angular-meteor.git angular
+mkdir angular-legacy
+git clone https://github.com/[your_username]/angular-meteor-legacy.git angular-legacy
 ```
 
 Create a `packages` directory under your project's root folder and link your forked repo
@@ -67,10 +67,10 @@ Create a `packages` directory under your project's root folder and link your for
 cd myProject
 mkdir packages
 cd packages
-ln -s ~/path_to_your_repos/angular
+ln -s ~/path_to_your_repos/angular-legacy
 ```
 
-Now you can start using your own copy of the `angular-meteor` project from `myProject`.
+Now you can start using your own copy of the `angular-meteor-legacy` project from `myProject`.
 
 ### Running tests
 
@@ -150,7 +150,7 @@ Please note that the names of the templates to Angular will be their URL as Mete
 
 ### Binding to Meteor Collections
 
-[angular-meteor](http://angular-meteor.com/) provides 3-way data binding (view-client-server) by tying a Meteor collection to an Angular model. The API to accomplish this is [$meteor.collection](http://angular-meteor.com/api/meteorCollection).
+[angular-meteor](http://angular-meteor.com/) provides 3-way data binding (view-client-server) by tying a Meteor collection to an Angular model. The API to accomplish this is [$meteor.collection](http://angular-meteor.com/api/1.2.2/meteorCollection).
 
 ```js
 $scope.todos = $meteor.collection(Todos);
@@ -160,7 +160,7 @@ $scope.todos = $meteor.collection(Todos);
 
 ### Subscribe
 
-[$meteor.subscribe](http://angular-meteor.com/api/subscribe) is a wrapper for `Meteor.subscribe` that returns a promise.
+[$meteor.subscribe](http://angular-meteor.com/api/1.2.2/subscribe) is a wrapper for `Meteor.subscribe` that returns a promise.
 
 Here's an example of how to tie a Meteor collection to a clean Angular model in the form of an array:
 
@@ -186,13 +186,13 @@ Use the [urigo:angular-blaze-template package](https://github.com/urigo/angular-
 
 ### User Authentication
 
-angular-meteor provides complete support for the [Meteor accounts system](http://docs.meteor.com/#/full/accounts_api). more details here -  [Documentation](http://angular-meteor.com/api/user).
+angular-meteor provides complete support for the [Meteor accounts system](http://docs.meteor.com/#/full/accounts_api). more details here -  [Documentation](http://angular-meteor.com/api/1.2.2/user).
 
 [More in step 8 of the tutorial](http://angular-meteor.com/tutorial/step_08)
 
 ### Meteor methods with promises
 
-[$meteor.call](http://angular-meteor.com/api/methods) calls a [Meteor method](http://docs.meteor.com/#/full/meteor_methods) and returns a promise.
+[$meteor.call](http://angular-meteor.com/api/1.2.2/methods) calls a [Meteor method](http://docs.meteor.com/#/full/meteor_methods) and returns a promise.
 
 ```js
 $meteor.call('addUser', username).then(function (data) {
@@ -204,7 +204,7 @@ $meteor.call('addUser', username).then(function (data) {
 
 ### Bind Meteor session
 
-[$meteor.session](http://angular-meteor.com/api/session) binds a scope variable to a Meteor Session variable.
+[$meteor.session](http://angular-meteor.com/api/1.2.2/session) binds a scope variable to a Meteor Session variable.
 
 ```js
 $meteor.session('counter').bind($scope, 'counter');
