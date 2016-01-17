@@ -1,8 +1,8 @@
 # Run this script from home folder
 
 # configs variables
-NAME=angular-meteor # Set the bundle file name
-PACKAGE=angular-meteor-data
+NAME=angular-meteor-legacy # Set the bundle file name
+PACKAGE=angular-meteor-legacy-data
 DIST_FOLDER=dist # The folder that the bundled files will be copy in to
 
 # run time variables
@@ -51,7 +51,7 @@ cat "$PACKAGES_PATH/session.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/lai_collection-extensions.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/dburles_mongo-collection-instances.js" >> $OUTPUT_PATH/$NAME.bundle.js
 
-cat "$PACKAGES_PATH/angular-meteor-data.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/angular-meteor-legacy-data.js" >> $OUTPUT_PATH/$NAME.bundle.js
 
 # Minify
 cd $PROJECT_ROOT

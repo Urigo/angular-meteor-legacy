@@ -1,8 +1,8 @@
 {
-  "name": "angular-meteor",
-  "main": "./dist/angular-meteor.bundle.min.js",
-  "version": "1.2.1",
-  "homepage": "https://github.com/Urigo/angular-meteor",
+  "name": "angular-meteor-legacy",
+  "main": "./dist/angular-meteor-legacy.bundle.min.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Urigo/angular-meteor-legacy",
   "authors": [
     "Uri Goldshtein <uri.goldshtein@gmail.com>"
   ],
@@ -10,8 +10,11 @@
   "keywords": [
     "AngularJS",
     "Meteor",
+    "legacy",
     "angular-meteor",
-    "angular"
+    "angular-meteor-legacy",
+    "angular",
+    "angular-legacy"
   ],
   "license": "MIT",
   "ignore": [

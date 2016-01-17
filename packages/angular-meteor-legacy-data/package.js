@@ -1,8 +1,8 @@
 Package.describe({
-  name: "angular-meteor-data",
+  name: "angular-meteor-legacy-data",
   summary: "Everything you need to use AngularJS in your Meteor app",
-  version: "0.0.6",
-  git: "https://github.com/Urigo/angular-meteor.git",
+  version: "0.0.1",
+  git: "https://github.com/Urigo/angular-meteor-legacy.git",
   documentation: null
 });
 
@@ -54,7 +54,7 @@ Package.onTest(function(api) {
   api.use('sanjo:jasmine@0.19.0');
   api.use('angular:angular-mocks@1.4.7');
   api.use('mdg:camera@1.1.5');
-  api.use('angular-meteor-data');
+  api.use('angular-meteor-legacy-data');
 
   // auxiliary
   api.addFiles([
